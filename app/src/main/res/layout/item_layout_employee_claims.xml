@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/employeeClaimsItemCardView"
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        android:background="#EEEEEE"
+        app:cardBackgroundColor="#EEEEEE"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemIDTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="CID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:text="Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:text="Type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:text="Amount"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/employeeClaimsItemCIDTextView"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:text="CID" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemDateTextView"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:text="21-04-2020" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemTypeTextView"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:text="Type" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemAmountTextView"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:text="$2134.56" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="325dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimItemStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:text="Status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/employeeClaimItemStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Approved"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemImageURLTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Image"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/employeeClaimsItemImageLinkButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_approve_claims"
+                app:srcCompat="@drawable/ic_claims_image_button_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsEIDTextView"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="EID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemEmpNameTextView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Emp Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingEmployeeClaimsItemReasonTextView"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Reason"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/employeeClaimsItemEIDTextView"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:text="EID" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemEmpNameTextView"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemReasonTextView"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="reason reason reason reason reason reason reason reason reason reason reason reason" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

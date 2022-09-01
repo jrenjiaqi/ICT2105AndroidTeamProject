@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constr_leave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/zz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_alert_bg_leave"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/success_msg_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:text="Leave Applied Successfully"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_leave"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_approve_leave"
+        android:padding="8dp"
+        android:src="@drawable/ic_check_leave"
+        app:layout_constraintBottom_toTopOf="@id/zz"
+        app:layout_constraintEnd_toEndOf="@id/zz"
+        app:layout_constraintStart_toStartOf="@id/zz"
+        app:layout_constraintTop_toTopOf="@id/zz" />
+
+    <Button
+        android:id="@+id/leave_confirm2_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/colorGreen"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/zz"
+        app:layout_constraintEnd_toEndOf="@id/zz"
+        app:layout_constraintStart_toStartOf="@id/zz"
+        app:layout_constraintTop_toBottomOf="@id/zz" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

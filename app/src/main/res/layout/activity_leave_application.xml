@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="10dp">
+
+            <Spinner
+                android:id="@+id/leaveTypeSpinner"
+                android:layout_width="264dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="Leave Type" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="200dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="Start Date" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:id="@+id/startDateTextView"
+                    android:layout_width="207dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/startDateButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/ic_navbar_attendance" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="300dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <ImageButton
+                android:id="@+id/endDateButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/ic_navbar_attendance" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="End Date" />
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/endDateTextView"
+                        android:layout_width="207dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="400dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="Reason" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/leaveReasonTextInput"
+                    android:layout_width="265dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="70dp"
+                    android:gravity="top|left" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/leave_confirmation_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="600dp"
+            android:background="@drawable/ic_button_color"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:initialCornerAngle="27dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="20dp"
+            app:spinning_bar_width="4dp" />
+
+        <TextView
+            android:id="@+id/leave_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Leave Application"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+</FrameLayout>

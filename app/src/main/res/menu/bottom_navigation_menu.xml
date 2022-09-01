@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:enabled="true"
+        android:icon="@drawable/ic_navbar_home"
+        android:title="@string/module_0_label"/>
+    <item
+        android:id="@+id/menuClaims"
+        android:enabled="true"
+        android:icon="@drawable/ic_navbar_claims"
+        android:title="@string/module_1_label"/>
+    <item
+        android:id="@+id/menuProfile"
+        android:enabled="true"
+        android:icon="@drawable/ic_navbar_profile"
+        android:title="@string/module_2_label"/>
+    <item
+        android:id="@+id/menuLeave"
+        android:enabled="true"
+        android:icon="@drawable/ic_navbar_leave"
+        android:title="@string/module_3_label"/>
+    <item
+        android:id="@+id/menuAttendance"
+        android:enabled="true"
+        android:icon="@drawable/ic_navbar_attendance"
+        android:title="@string/module_4_label"/>
+</menu>

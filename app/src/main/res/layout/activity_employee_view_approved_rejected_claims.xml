@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".claims.EmployeeViewApprovedRejectedClaimActivity">
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/employeeClaimsApproveRejectRefreshPageButton"
+        android:layout_width="181dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/login_button"
+        android:text="Refresh"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="20dp"
+        app:spinning_bar_width="4dp" />
+
+    <LinearLayout
+        android:id="@+id/employeeViewAllClaimsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/headingEmployeeViewApprovedClaimsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Approved Claims"
+            android:textSize="34dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/employeeViewApprovedClaimsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/employeeApprovedClaimsEmptyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="No Items To Display"
+            android:textColor="@color/grey"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/headingEmployeeViewRejectedClaimsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Rejected Claims"
+            android:textSize="34dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/employeeViewRejectedClaimsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/employeeRejectedClaimsEmptyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="No Items To Display"
+            android:textColor="@color/grey"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

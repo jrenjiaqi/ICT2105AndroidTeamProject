@@ -1,0 +1,259 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="0dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/employeeClaimsTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Claims Type" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/employeeClaimsTypeSpinner"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/leave_title"
+            android:layout_marginTop="180dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/employeeClaimsDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="Expense Date" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/employeeClaimsDateInputTextView"
+                    android:layout_width="156dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-18dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/employeeClaimsDateButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/ic_navbar_attendance" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="0dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/employeeClaimsAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Amount (SGD)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="403dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employeeClaimsAmountEditText"
+                        android:layout_width="257dp"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="0dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="0dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <ImageButton
+                android:id="@+id/employeeClaimsImageSiteButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/ic_baseline_cloud_upload_24" />
+
+            <TextView
+                android:id="@+id/employeeClaimsItemImageLinkButtonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Image Link" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="403dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employeeClaimsItemImageLinkEditText"
+                        android:layout_width="178dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="0dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/employeeClaimsHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Claims Application"
+            android:textSize="34sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginEnd="0dp"
+            app:cardBackgroundColor="#EEEEEE"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/employeeClaimsReasonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Reason" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="403dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employeeClaimsReasonEditText"
+                        android:layout_width="257dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top|left" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/employeeClaimsSubmitButton"
+            android:layout_width="181dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="630dp"
+            android:layout_marginEnd="110dp"
+            android:background="@drawable/login_button"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:initialCornerAngle="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="20dp"
+            app:spinning_bar_width="4dp" />
+    </RelativeLayout>
+
+</FrameLayout>

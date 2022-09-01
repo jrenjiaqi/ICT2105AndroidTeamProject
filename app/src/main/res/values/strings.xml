@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Neptune Blue</string>
+
+    <!--Login Function-->
+    <string name="login_email_missing">Missing email!</string>
+    <string name="login_password_missing">Missing password!</string>
+    <string name="login_emailpassword_wrong">Email/Password incorrect!</string>
+
+    <!--alert(yujing)-->
+    <string name="leave_dialog_title">Leave Application</string>
+
+    <string name="employeeClaimsDialogTitle">Claim Application</string>
+    <string name="managerManageClaimsSubmitDialogTitle">Claim Application</string>
+    <string name="managerManageClaimsClearDialogTitle">Clear Selection</string>
+
+    <!--Home Page Modules-->
+    <string name="module_0_label">Home</string>
+    <string name="module_1_label">Claims</string>
+    <string name="module_2_label">Profile</string>
+    <string name="module_3_label">Leave</string>
+    <string name="module_4_label">Attendance</string>
+
+    <!--Shared Preferences-->
+    <string name="user_sharedprefkey">USERSPKEY</string>
+    <string name="user_eid">EMPLOYEEID</string>
+    <string name="user_role">ROLE</string>
+    <string name="user_current_location">CURRENTLOCATION</string>
+
+    <!-- For Claims Type Spinner -->
+    <string-array name="claims_type_array">
+        <item>Advertising</item>
+        <item>Gifts</item>
+        <item>Education</item>
+        <item>Misc</item>
+        <item>Travel</item>
+        <item>Utility</item>
+    </string-array>
+    <!-- For undefined spinner type -->
+    <string name="claims_undefined">Undefined</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera_confirm_button_content_description">Confirm</string>
+    <string name="camera_cancel_button_content_description">Cancel</string>
+    <string name="camera_Image_button_content_description">Image</string>
+    <string name="retake_camera_menu_item_title">Retake</string>
+    <string name="delete_camera_menu_item_title">Delete</string>
+    <string name="profile_image_content_description">Your Profile Picture</string>
+    <string name="profile_text_view_contact_title">Contact</string>
+    <string name="profile_button_edit_profile">Edit Profile</string>
+    <string name="profile_button_change_password">Change Password</string>
+    <string name="edit_profile_button_save_changes">Save Changes</string>
+    <string name="edit_profile_hint_enter_your_email">Enter Your Email</string>
+    <string name="edit_profile_hint_enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="edit_profile_hint_enter_your_name">Enter your name</string>
+    <string name="profile_text_view_change_password_title">Change Password</string>
+    <string name="edit_profile_hint_enter_current_password">Enter Current Password</string>
+    <string name="edit_profile_hint_enter_new_password">Enter New Password</string>
+    <string name="edit_profile_hint_re_enter_new_password">Re-enter New Password</string>
+
+    <string name="reg_work_start_time">9</string>
+    <string name="reg_work_end_time">18</string>
+    <string name="edit_profile_text_view_change_password">Change Password</string>
+    <string name="edit_profile_text_view_change_password_message">Your are about to change your Password.\n You can\'t undo this action.</string>
+    <string name="edit_profile_image_view_content_description_warning">Warning</string>
+    <string name="edit_profile_text_view_add_employee">Add Employee</string>
+    <string name="edit_profile_text_view_add_employee_message">You are about to add a new employee.\nYou can\'t undo this action.</string>
+    <string name="edit_profile_hint_enter_employee_name">Enter Employee Name</string>
+    <string name="edit_profile_hint_enter_employee_phone_no">Enter Employee Phone No.</string>
+    <string name="edit_profile_hint_enter_employee_email">Enter Employee Email</string>
+    <string name="edit_profile_radio_button_admin">Admin</string>
+    <string name="edit_profile_radio_button_manager">Manager</string>
+    <string name="edit_profile_radio_button_staff">Staff</string>
+    <string name="profile_image_button_content_description_add_employee">Add Employee</string>
+    <string name="profile_error_message_unable_to_retrieve_information">Unable to retrieve information</string>
+
+</resources>

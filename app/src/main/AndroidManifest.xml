@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ict2105project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".HRApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/company_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/company_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ICT2105Project">
+        <activity
+            android:name=".claims.EmployeeViewPendingClaimActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.LocationService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".claims.EmployeeCreateNewClaimActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".claims.ManagerManageAllClaimsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".claims.EmployeeViewApprovedRejectedClaimActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".leaves.EmployeeApplyLeaveActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:label="Leave Application" />
+        <activity
+            android:name=".leaves.EmployeeViewLeaveActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:label="View Leave" />
+        <activity
+            android:name=".leaves.EmployeeDeleteLeaveActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:label="Delete Leave" />
+        <activity
+            android:name=".leaves.ManagerApproveLeaveActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:label="Leave Application" />
+        <activity
+            android:name=".profile.ProfileEditActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".utilities.CameraPreviewActivity"
+            android:screenOrientation="portrait"
+            android:label="Photo"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".profile.ProfileEditChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ManagerProfileAddEmployeeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: "CI"
+
+# Controls when the workflow will run
+# Triggers the workflow on push or pull request events on all branches
+on: [push, pull_request, workflow_dispatch]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout the code from the repository
+        uses: actions/checkout@v2
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew build
+      
+      - name: Unit Test with Gradle
+        run: ./gradlew test
+        
+#       - name: Instrumentation Test with Gradle
+#         run: ./gradlew androidTest
+        
+      - name: Sends message to Slack channel
+        if: always()
+        uses: 8398a7/action-slack@v3.9.0
+        with:
+          status: ${{ job.status }}
+          author_name: Integration Test
+          fields: repo,commit,message,author # default: repo,commit
+        env:
+          # Need dedicated webhook URL that receives and post to a specific channel
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
