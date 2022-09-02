@@ -31,13 +31,13 @@ jobs:
 #       - name: Instrumentation Test with Gradle
 #         run: ./gradlew androidTest
         
-      - name: Sends message to Slack channel
-        if: always()
-        uses: 8398a7/action-slack@v3.9.0
-        with:
-          status: ${{ job.status }}
-          author_name: Integration Test
-          fields: repo,commit,message,author # default: repo,commit
-        env:
-          # Need dedicated webhook URL that receives and post to a specific channel
-          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+#       - name: Sends message to Slack channel
+#         if: always()
+#         uses: 8398a7/action-slack@v3.9.0
+#         with:
+#           status: ${{ job.status }}
+#           author_name: Integration Test
+#           fields: repo,commit,message,author # default: repo,commit
+#         env:
+#           # Need dedicated webhook URL that receives and post to a specific channel
+#           SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
