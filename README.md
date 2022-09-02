@@ -47,7 +47,7 @@ https://youtu.be/XwPVwqkvCGw
 ### 7.2 Advanced Features
 | Feature                          | Relevance                               |
 | ---------------------------------| ----------------------------------------|
-| [Location (Networking, Coroutine)](https://youtu.be/XwPVwqkvCGw?t=26) | Clock in only at Specified Location     |
+| [Location (FusedLocationProviderClient, Geocoder)](https://youtu.be/XwPVwqkvCGw?t=26) | Clock in only at Specified Location     |
 | [Camera](https://youtu.be/XwPVwqkvCGw?t=158)                           | Edit Profile Information                |
 | [Fragments](https://youtu.be/XwPVwqkvCGw?t=45)                        | Features as Swipeable Tabs              |
 | [RecyclerView](https://youtu.be/XwPVwqkvCGw?t=283)                     | Display Claims and Leaves               | 
